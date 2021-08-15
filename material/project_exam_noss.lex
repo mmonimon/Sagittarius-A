@@ -287,6 +287,8 @@ However, when looking at typical BLEU scores from 2005, the model has exceeded t
 
 \includegraphics[scale=0.5]{BLEU.png}
 
+The provided newstestB2020 test set achieved a BLEU score of 21.85 with the model sagittarius\_a - average3 and a beam\_size of 4. This is significantly lower than the score achieved by the newstest2019 test set (35.27). However, a look at past WMT challenges shows that the BLEU score for English → German has already dropped sharply twice since 2011. Once from 2016 to 2017 (34.8 to 28.9) and once from 2018 to 2019 (50.3 to 45.2). I therefore suspect that newstestB2020 contains more difficult sentences than newstest2019.
+
 \subsection{Future outlook}
 
 I came up with some ideas on how the BLEU score could be improved even further. Unfortunately, this was not possible due to lack of time and hardware resources. Research groups often use 8 or more GPUs for training and can therefore train much larger models faster. Other parameters that should be investigated are for example:
